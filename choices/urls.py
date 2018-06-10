@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django_filters.views import FilterView
+from filter.filters import PhoneFilter
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', FilterView.as_view(filterset_class=PhoneFilter,
+        template_name='filter/phone_filter.html'), name='search'),
+
 ]
