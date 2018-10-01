@@ -35,7 +35,7 @@
             <div>
               {% for choice in filter.form.processor_speed %}
                 <label class="checkbox-inline">
-                  {{ choice.tag }} {{ choice.choice_label }}
+                  {{ choice.tag }} - {{ choice.choice_label }}
                 </label>
               {% endfor %}
             </div>
@@ -55,7 +55,7 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th>Name</th>
+          <th>Model</th>
           <th>Brand</th>
           <th>Operating System</th>
           <th>Data Transfer</th>
