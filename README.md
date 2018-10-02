@@ -16,4 +16,5 @@
 
 4. Check if the project is working
 
-	`python manage.py runserver`
+	`python manage.py runserver
+# end
