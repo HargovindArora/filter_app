@@ -17,3 +17,4 @@
 4. Check if the project is working
 
 	`python manage.py runserver`
+And here you go to explore the site
